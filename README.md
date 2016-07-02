@@ -15,7 +15,7 @@ Most of the key mappings in the search window are the default fzf ones. The most
 - **ctrl-b** recursively jump into the parent directory (`..`).
 - **ctrl-g** flip to the next directory on the `pushd` stack.
 - **ctrl-h** jump into the directory being listed, not the selection.
-- **ctrl-f** recursively jump into selection.
+- **ctrl-x** change to the directory exactly as typed
 
 In Bash, the script creates a commands:
 
