@@ -16,7 +16,7 @@ function jump() {
     FZF_ARGS='-e +x --print-query --expect=ctrl-x,ctrl-f,ctrl-c,ctrl-b,ctrl-h'
 
     F=$(
-    { dirs -v; ls -d $1*/ ; } 2>/dev/null | fzf $FZF_ARGS | {
+    { dirs -v; \ls -d $1*/ ; } 2>/dev/null | fzf $FZF_ARGS | {
       read query;
       read expect;
       read n dir;
